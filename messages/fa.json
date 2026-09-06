@@ -1,0 +1,26 @@
+{
+  "header": {
+    "title": "پلتفرم بازار ساختمانی",
+    "searchPlaceholder": "جستجو در پروژه‌ها یا مواد...",
+    "searchButton": "جستجو",
+    "notificationsLabel": "اطلاعیه‌ها"
+  },
+  "sidebar": {
+    "dashboard": "داشبورد",
+    "projects": "پروژه‌ها",
+    "activeProjects": "پروژه‌های فعال",
+    "archivedProjects": "پروژه‌های آرشیو شده",
+    "newProject": "افزودن پروژه جدید",
+    "suppliers": "تامین‌کنندگان",
+    "listSuppliers": "لیست تامین‌کنندگان",
+    "newSupplier": "افزودن تامین‌کننده",
+    "materials": "مواد",
+    "listMaterials": "لیست مواد",
+    "categoriesMaterials": "دسته‌بندی مواد",
+    "inventory": "موجودی انبار",
+    "requests": "درخواست‌های من",
+    "notifications": "اطلاعیه‌ها",
+    "settings": "تنظیمات",
+    "logout": "خروج از حساب"
+  }
+}

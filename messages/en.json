@@ -1,0 +1,26 @@
+{
+  "header": {
+    "title": "Construction Marketplace",
+    "searchPlaceholder": "Search projects or materials...",
+    "searchButton": "Search",
+    "notificationsLabel": "Notifications"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "activeProjects": "Active Projects",
+    "archivedProjects": "Archived Projects",
+    "newProject": "New Project",
+    "suppliers": "Suppliers",
+    "listSuppliers": "Supplier List",
+    "newSupplier": "New Supplier",
+    "materials": "Materials",
+    "listMaterials": "Material List",
+    "categoriesMaterials": "Material Categories",
+    "inventory": "Inventory",
+    "requests": "My Requests",
+    "notifications": "Notifications",
+    "settings": "Settings",
+    "logout": "Log Out"
+  }
+}
