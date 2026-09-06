@@ -2,6 +2,8 @@
 
 import { Bell, UserRound } from "lucide-react";
 import { useDictionary } from "@/lib/i18n-client";
+import DateDisplay from "./dateDisplay";
+import LanguageSwitcher from "./languageSwitcher";
 
 export default function Header() {
   const { header } = useDictionary();
@@ -24,6 +26,8 @@ export default function Header() {
           </div>
         </div>
         <div className="flex items-center gap-[.5rem]">
+          <DateDisplay />
+          <LanguageSwitcher />
           <button className="bg-transparent border-none text-lg cursor-pointer p-1 text-(--primary)" title={header.notificationsLabel}>
             <Bell />
           </button>

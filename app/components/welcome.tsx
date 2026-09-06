@@ -4,7 +4,7 @@ interface WelcomeProps {
 export default function Welcome({ message }: WelcomeProps) {
   return (
     <>
-      <h3 className="text-xl font-medium">{message}</h3>
+      <h3 className="text-xl font-medium my-4">{message}</h3>
     </>
   );
 }
