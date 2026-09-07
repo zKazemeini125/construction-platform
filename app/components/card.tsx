@@ -1,18 +1,34 @@
 interface CardProps {
   title: string;
   count: string;
+  icon?: React.ElementType;
+  background: string;
 }
-export default function Card({ title, count }: CardProps) {
+
+export default function Card({ title, count, icon: Icon, background }: CardProps) {
   return (
     <div
-      className="flex flex-col w-64 h-42 rounded-xl justify-between"
+      className="relative flex flex-col w-64 h-42 rounded-xl justify-between shadow-lg overflow-hidden"
       style={{
-        boxShadow:
-          "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;",
+        backgroundImage: `url(${background})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
-      <span className="text-3xl text-center p-6">{count}</span>
-      <span className="text-xl text-center p-2 ">{title}</span>
+      {/* آیکون بزرگ و نیمه‌شفاف */}
+      <div className="absolute left-[-10px] bottom-[-15px] opacity-50 text-[#dbdbdb] pointer-events-none">
+        {/* <Icon size={140} strokeWidth={1.25} /> */}
+      </div>
+
+      {/* محتوای کارت */}
+      <div className="relative z-10 flex flex-col justify-between h-full p-5">
+        <span className="text-3xl font-extrabold text-white text-center">
+          {count}
+        </span>
+        <span className="text-xl text-white text-center opacity-90">
+          {title}
+        </span>
+      </div>
     </div>
   );
 }

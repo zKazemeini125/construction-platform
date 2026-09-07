@@ -11,14 +11,15 @@ export default function Home() {
     <>
       <PageContainer
         breadcrumbItems={[{ label: sidebar.dashboard, href: "/dashboard" }]}
-      />
-      <Welcome message="سلام زهرا خوش آمدید!" />
-      <div className="flex flex-row gap-3 justify-around">
-        <Card title="پروژه‌ها" count="12"></Card>
-        <Card title="سفارشات" count="9"></Card>
-        <Card title="پرداختی ها" count="35"></Card>
-        <Card title="پروژه‌ها" count="12"></Card>
-      </div>
+      >
+        <Welcome message="سلام زهرا خوش آمدید!" />
+        <div className="flex flex-row gap-3 justify-around py-3">
+          <Card title="پروژه‌ها" count="12" background="/cardBackground/project-dark.png"></Card>
+          <Card title="سفارشات" count="9" background="/cardBackground/shop-dark.png"></Card>
+          <Card title="پرداختی ها" count="35" background="/cardBackground/wallet-dark.png"></Card>
+          <Card title="پروژه‌ها" count="12" background="/cardBackground/time-dark.png"></Card>
+        </div>
+      </PageContainer>
     </>
   );
 }
