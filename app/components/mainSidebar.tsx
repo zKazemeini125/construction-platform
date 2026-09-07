@@ -92,8 +92,8 @@ export default function MainSidebar() {
   ];
 
   return (
-    <aside className="flex h-full w-70 shrink-0 flex-col bg-(--background) text-(--foreground)">
-      <nav className="min-h-0 flex-1 overflow-y-auto px-3 py-2 scrollbar-thumb-(--primary-foreground) scrollbar-track-(--muted) scrollbar-thin scrollbar-gutter-stable">
+    <aside className="flex h-full w-70 shrink-0 flex-col bg-(--background) text-(--foreground) border-l border-(--muted)">
+      <nav className="min-h-0 flex-1 overflow-y-auto px-2 py-2 scrollbar-thumb-(--primary-foreground) scrollbar-track-(--muted) scrollbar-thin scrollbar-gutter-stable">
         <ul className="flex flex-col gap-1">
           {navItems.map((item) => {
             const Icon = item.icon;

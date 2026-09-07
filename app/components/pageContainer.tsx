@@ -19,9 +19,7 @@ export default function PageContainer({
       <div className="border-b border-(--muted) p-3">
         <Breadcrumb items={breadcrumbItems} />
       </div>
-
-      {/* محتوای صفحه */}
-      <div className="p-4">{children}</div>
+      <div className="p-2">{children}</div>
     </div>
   );
 }
