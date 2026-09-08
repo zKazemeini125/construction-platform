@@ -5,6 +5,7 @@ import { locales, type Locale } from "@/i18n-config";
 import "../globals.css";
 import { notFound } from "next/navigation";
 import LocalizedNumbers from "../components/LocalizedNumbers";
+import { SidebarProvider } from "@/lib/sidebar-context";
 
 const vazirmatn = Vazirmatn({
   subsets: ["arabic"],
@@ -30,19 +31,21 @@ export default async function RootLayout({
     <html dir={dir} lang={locale} className={vazirmatn.className}>
       <body>
         <LocalizedNumbers>
-          <div className="flex h-screen flex-col">
-            {/* Header */}
-            <div className="shrink-0">
-              <Header />
-            </div>
+          <SidebarProvider>
+            <div className="flex h-screen flex-col">
+              {/* Header */}
+              <div className="shrink-0">
+                <Header />
+              </div>
 
-            {/* Sidebar + Content */}
-            <div className="flex min-h-0 flex-1">
-              <MainSidebar />
+              {/* Sidebar + Content */}
+              <div className="flex min-h-0 flex-1">
+                <MainSidebar />
 
-              <main className="min-w-0 flex-1 overflow-y-auto">{children}</main>
+                <main className="min-w-0 flex-1 overflow-y-auto">{children}</main>
+              </div>
             </div>
-          </div>
+          </SidebarProvider>
         </LocalizedNumbers>
       </body>
     </html>
