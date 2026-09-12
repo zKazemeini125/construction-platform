@@ -1,0 +1,22 @@
+npm verbose cli /opt/homebrew/Cellar/node/23.11.0/bin/node /opt/homebrew/bin/npm
+npm info using npm@10.9.2
+npm info using node@v23.11.0
+npm verbose title npm install
+npm verbose argv "install" "--loglevel" "verbose"
+npm verbose logfile logs-max:10 dir:/Users/zahra/.npm/_logs/2026-09-12T07_39_33_109Z-
+npm verbose logfile /Users/zahra/.npm/_logs/2026-09-12T07_39_33_109Z-debug-0.log
+npm verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: apps/web
+npm http fetch GET https://registry.npmjs.org/@tailwindcss%2fpostcss attempt 1 failed with ETIMEDOUT
+npm http fetch GET https://registry.npmjs.org/@tailwindcss%2fpostcss attempt 2 failed with ETIMEDOUT
+npm http fetch GET https://registry.npmjs.org/@tailwindcss%2fpostcss attempt 3 failed with ETIMEDOUT
+npm http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2fpostcss 109518ms (cache stale)
+npm http fetch GET https://registry.npmjs.org/@types%2fnode attempt 1 failed with ETIMEDOUT
+npm http fetch GET https://registry.npmjs.org/@types%2fnode attempt 2 failed with ETIMEDOUT
+npm http fetch GET https://registry.npmjs.org/@types%2fnode attempt 3 failed with ETIMEDOUT
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fnode 103290ms (cache stale)
+npm http fetch GET https://registry.npmjs.org/@types%2freact attempt 1 failed with ETIMEDOUT
+npm http fetch GET https://registry.npmjs.org/@types%2freact attempt 2 failed with ETIMEDOUT
+npm http fetch GET https://registry.npmjs.org/@types%2freact attempt 3 failed with ETIMEDOUT
+npm http fetch GET 200 https://registry.npmjs.org/@types%2freact 249534ms (cache stale)
+npm http fetch GET https://registry.npmjs.org/@types%2freact-dom attempt 1 failed with ETIMEDOUT
+npm http fetch GET https://registry.npmjs.org/@types%2freact-dom attempt 2 failed with ETIMEDOUT
