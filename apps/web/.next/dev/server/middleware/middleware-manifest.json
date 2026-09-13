@@ -3,13 +3,13 @@
   "middleware": {
     "/": {
       "files": [
-        "server/edge/chunks/node_modules_next_dist_1b23hhn._.js",
-        "server/edge/chunks/[root-of-the-server]__20g0j_h._.js",
-        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0usczvb.js"
+        "server/edge/chunks/node_modules_next_dist_0lgd1n1._.js",
+        "server/edge/chunks/[root-of-the-server]__0njor9g._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_1lfe08l.js"
       ],
       "name": "middleware",
       "page": "/",
-      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0usczvb.js",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_1lfe08l.js",
       "matchers": [
         {
           "regexp": "/:nextData(_next/data/[^/]{1,})?/((?!api|_next|_vercel|.*\\..*).*){(\\.json|\\.rsc|\\.segments/.+\\.segment\\.rsc)}?",
@@ -21,9 +21,9 @@
       "env": {
         "__NEXT_BUILD_ID": "development",
         "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "dna/Kq5wwZo5smbv09o9qv1i1Ba61SUebOIwYAZBT+M=",
-        "__NEXT_PREVIEW_MODE_ID": "c9ea146437f85b16fe4db1083e00359a",
-        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "f6d23334baec3c2c42b7293910784df8d78d41ace5ceb935d5c7eb5f997736b3",
-        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "47041b1ecc97647474ed6c3975450a9987f873b9d7a391dabdfd11dd47a3d1c3"
+        "__NEXT_PREVIEW_MODE_ID": "03e0e66553e88bd5dc4334ba64a6a24a",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "d4f4c4c4fe0245601ece5d3f2d7e5ebfe7b783ec8c36da20676693bd48e292eb",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "4772f5c9108807e8db8894c138b6ca14f8ec5079f1d301b4f33e9ebb968a53cf"
       }
     }
   },
