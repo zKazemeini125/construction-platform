@@ -1,0 +1,161 @@
+├── .vscode/
+│   └── settings.json
+├── apps/
+│   └── web/
+│       ├── .next/
+│       │   ├── dev/
+│       │   │   ├── cache/
+│       │   │   │   ├── turbopack/
+│       │   │   │   │   └── v16.3.4-299180d3/
+│       │   │   │   │       └── CURRENT
+│       │   │   │   └── .rscinfo
+│       │   │   ├── logs/
+│       │   │   │   └── next-development.log
+│       │   │   ├── server/
+│       │   │   │   ├── edge/
+│       │   │   │   │   └── chunks/
+│       │   │   │   │       ├── [root-of-the-server]__0ewatjr._.js
+│       │   │   │   │       ├── [root-of-the-server]__0ewatjr._.js.map
+│       │   │   │   │       ├── [root-of-the-server]__0ox-z8n._.js
+│       │   │   │   │       ├── [root-of-the-server]__0ox-z8n._.js.map
+│       │   │   │   │       ├── [root-of-the-server]__0sxnjmr._.js
+│       │   │   │   │       ├── [root-of-the-server]__0sxnjmr._.js.map
+│       │   │   │   │       ├── [root-of-the-server]__1qkkf_q._.js
+│       │   │   │   │       ├── [root-of-the-server]__1qkkf_q._.js.map
+│       │   │   │   │       ├── [root-of-the-server]__1zbig41._.js
+│       │   │   │   │       ├── [root-of-the-server]__1zbig41._.js.map
+│       │   │   │   │       ├── [root-of-the-server]__20g0j_h._.js
+│       │   │   │   │       ├── [root-of-the-server]__20g0j_h._.js.map
+│       │   │   │   │       ├── node_modules_next_dist_1b23hhn._.js
+│       │   │   │   │       ├── node_modules_next_dist_1b23hhn._.js.map
+│       │   │   │   │       ├── node_modules_next_dist_esm_build_templates_edge-wrapper_087wfn6.js.map
+│       │   │   │   │       ├── node_modules_next_dist_esm_build_templates_edge-wrapper_0usczvb.js.map
+│       │   │   │   │       ├── node_modules_next_dist_esm_build_templates_edge-wrapper_0wngzac.js.map
+│       │   │   │   │       ├── node_modules_next_dist_esm_build_templates_edge-wrapper_1105nqd.js.map
+│       │   │   │   │       ├── node_modules_next_dist_esm_build_templates_edge-wrapper_1891qrj.js.map
+│       │   │   │   │       ├── node_modules_next_dist_esm_build_templates_edge-wrapper_1me8til.js.map
+│       │   │   │   │       ├── turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_087wfn6.js
+│       │   │   │   │       ├── turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0usczvb.js
+│       │   │   │   │       ├── turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0wngzac.js
+│       │   │   │   │       ├── turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_1105nqd.js
+│       │   │   │   │       ├── turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_1891qrj.js
+│       │   │   │   │       └── turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_1me8til.js
+│       │   │   │   ├── middleware/
+│       │   │   │   │   └── middleware-manifest.json
+│       │   │   │   ├── app-paths-manifest.json
+│       │   │   │   ├── interception-route-rewrite-manifest.js
+│       │   │   │   ├── middleware-build-manifest.js
+│       │   │   │   ├── middleware-manifest.json
+│       │   │   │   ├── next-font-manifest.js
+│       │   │   │   ├── next-font-manifest.json
+│       │   │   │   ├── pages-manifest.json
+│       │   │   │   ├── server-reference-manifest.js
+│       │   │   │   └── server-reference-manifest.json
+│       │   │   ├── static/
+│       │   │   │   └── development/
+│       │   │   │       ├── _buildManifest.js
+│       │   │   │       ├── _clientMiddlewareManifest.js
+│       │   │   │       └── _ssgManifest.js
+│       │   │   ├── types/
+│       │   │   │   └── routes.d.ts
+│       │   │   ├── build-manifest.json
+│       │   │   ├── fallback-build-manifest.json
+│       │   │   ├── package.json
+│       │   │   ├── prerender-manifest.json
+│       │   │   ├── routes-manifest.json
+│       │   │   └── trace
+│       │   ├── _events_6171.json
+│       │   ├── _events_6740.json
+│       │   ├── _events_7924.json
+│       │   └── _events_8769.json
+│       ├── app/
+│       │   ├── [locale]/
+│       │   │   ├── dashboard/
+│       │   │   │   └── page.tsx
+│       │   │   ├── materials/
+│       │   │   │   ├── categories/
+│       │   │   │   │   └── page.tsx
+│       │   │   │   ├── inventory/
+│       │   │   │   │   └── page.tsx
+│       │   │   │   └── page.tsx
+│       │   │   ├── notifications/
+│       │   │   │   └── page.tsx
+│       │   │   ├── projects/
+│       │   │   │   ├── archived/
+│       │   │   │   │   └── page.tsx
+│       │   │   │   ├── new/
+│       │   │   │   │   └── page.tsx
+│       │   │   │   └── page.tsx
+│       │   │   ├── requests/
+│       │   │   │   └── page.tsx
+│       │   │   ├── settings/
+│       │   │   │   └── page.tsx
+│       │   │   ├── suppliers/
+│       │   │   │   ├── new/
+│       │   │   │   │   └── page.tsx
+│       │   │   │   └── page.tsx
+│       │   │   ├── layout.tsx
+│       │   │   └── page.tsx
+│       │   ├── fonts/
+│       │   │   └── irYekan.woff
+│       │   ├── icons/
+│       │   │   └── page.tsx
+│       │   ├── favicon.ico
+│       │   └── globals.css
+│       ├── messages/
+│       │   ├── en.json
+│       │   └── fa.json
+│       ├── i18n-config.ts
+│       └── package.json
+├── packages/
+│   └── ui/
+│       ├── src/
+│       │   ├── lib/
+│       │   │   ├── i18n-client.ts
+│       │   │   ├── nav-items.ts
+│       │   │   ├── numerals.ts
+│       │   │   └── sidebar-context.tsx
+│       │   ├── breadcrumb.tsx
+│       │   ├── card.tsx
+│       │   ├── dateDisplay.tsx
+│       │   ├── form.tsx
+│       │   ├── header.tsx
+│       │   ├── Icon.tsx
+│       │   ├── index.ts
+│       │   ├── languageSwitcher.tsx
+│       │   ├── LocalizedNumbers.tsx
+│       │   ├── mainSidebar.tsx
+│       │   ├── NumericInput.tsx
+│       │   ├── pageContainer.tsx
+│       │   ├── searchBar.tsx
+│       │   ├── temp.txt
+│       │   └── welcome.tsx
+│       ├── package.json
+│       └── tsconfig.json
+├── public/
+│   ├── cardBackground/
+│   │   ├── project-dark.png
+│   │   ├── project-light.png
+│   │   ├── shop-dark.png
+│   │   ├── shop-ligth.png
+│   │   ├── time-dark.png
+│   │   ├── time-light.png
+│   │   ├── wallet-dark.png
+│   │   └── wallet-light.png
+│   ├── en.png
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── iran.png
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── .gitignore
+├── eslint.config.mjs
+├── middleware.ts
+├── next.config.ts
+├── npm-install-log.txt
+├── package.json
+├── pnpm-workspace.yaml
+├── postcss.config.mjs
+├── README.md
+└── tsconfig.json
