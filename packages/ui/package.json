@@ -4,6 +4,7 @@
   "private": true,
   "main": "./src/index.ts",
   "types": "./src/index.ts",
+  "sideEffects": false,
   "peerDependencies": {
     "next": "16.3.4",
     "react": "19.2.8",
@@ -29,5 +30,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./primitives": "./src/primitives/index.ts",
+    "./layout": "./src/layout/index.ts",
+    "./forms": "./src/forms/index.ts",
+    "./data-display": "./src/data-display/index.ts",
+    "./feedback": "./src/feedback/index.ts",
+    "./domain": "./src/domain/index.ts",
+    "./messages/*.json": "./src/messages/*.json"
   }
 }

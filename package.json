@@ -6,7 +6,11 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspace=web",
-    "build": "npm run build --workspace=web"
+    "dev": "concurrently -n gateway,admin,portal,supplier \"npm run dev -w apps/gateway\" \"npm run dev -w apps/admin\" \"npm run dev -w apps/portal\" \"npm run dev -w apps/supplier\"",
+    "dev:api": "npm run dev -w apps/api",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
   }
 }
