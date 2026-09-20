@@ -33,3 +33,5 @@ next-env.d.ts
 # IDE
 .vscode/*
 !.vscode/settings.json
+
+npm-mac-troubleshooting-summary.md
