@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import Breadcrumb, { BreadcrumbItem } from "./breadcrumb";
+import Breadcrumb, { BreadcrumbItem } from "../components/breadcrumb";
 
 interface PageContainerProps {
   /** آیتم‌های breadcrumb (اختیاری - اگه ندی از روی مسیر ساخته می‌شه) */

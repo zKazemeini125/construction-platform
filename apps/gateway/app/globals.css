@@ -1,2 +1,145 @@
 @import "tailwindcss";
 @source "../../../packages/ui/src";
+
+@theme {
+  --font-sans: var(--font-iryekan), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  /* رنگ اصلی برند - اعتماد، مهندسی، تکنولوژی */
+  --primary: #123b4a;
+  --primary-light: #2e6170;
+
+  /* رنگ Accent - ساختمان، انرژی، Action */
+  --accent: #d9822b;
+  --accent-light: #f4b86a;
+
+  /* ======================================
+     Semantic / Status Colors
+     ====================================== */
+
+  /* موفقیت / تایید / تکمیل */
+  --success: #238b6d;
+
+  /* هشدار / نیازمند بررسی / در انتظار */
+  --warning: #d99a2b;
+
+  /* خطا / حذف / رد شده */
+  --danger: #c94c4c;
+
+  /* اطلاعات / در حال پردازش */
+  --info: #3b82a0;
+
+  /* ======================================
+     Background & Surface
+     ====================================== */
+
+  /* پس‌زمینه اصلی صفحات */
+  --background: #f6f8f9;
+
+  /* پس‌زمینه کارت‌ها، Modal و اجزای اصلی */
+  --surface: #ffffff;
+
+  /* سطح ثانویه، Header جدول، Input و بخش‌های فرعی */
+  --surface-secondary: #eef2f3;
+
+  /* ======================================
+     Borders
+     ====================================== */
+
+  --border: #d9e1e4;
+
+  /* ======================================
+     Typography
+     ====================================== */
+
+  /* متن اصلی */
+  --text-primary: #17262d;
+
+  /* متن ثانویه */
+  --text-secondary: #60717a;
+
+  /* متن کم‌اهمیت / Placeholder / Caption */
+  --text-muted: #8b999f;
+
+  /* ======================================
+     Radius
+     ====================================== */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* ======================================
+     Shadows
+     ====================================== */
+
+  --shadow-sm: 0 1px 2px rgba(18, 59, 74, 0.06);
+  --shadow-md: 0 4px 12px rgba(18, 59, 74, 0.08);
+  --shadow-lg: 0 10px 30px rgba(18, 59, 74, 0.12);
+
+  /* ======================================
+     Layout
+     ====================================== */
+
+  --sidebar-width: 260px;
+  --header-height: 64px;
+
+  /* ======================================
+     Transition
+     ====================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-vazirmatn), sans-serif;
+}
+
+/* ========================================
+   Selection
+   ======================================== */
+
+::selection {
+  background-color: var(--primary);
+  color: var(--surface);
+}
+
+/* ========================================
+   Scrollbar
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}
