@@ -10,6 +10,9 @@
 │   │   │   ├── globals.css
 │   │   │   ├── layout.tsx
 │   │   │   └── not-found.tsx
+│   │   ├── messages/
+│   │   │   ├── en.json
+│   │   │   └── fa.json
 │   │   ├── public/
 │   │   │   ├── file.svg
 │   │   │   ├── globe.svg
@@ -36,6 +39,9 @@
 │   │   │   ├── globals.css
 │   │   │   ├── layout.tsx
 │   │   │   └── not-found.tsx
+│   │   ├── messages/
+│   │   │   ├── en.json
+│   │   │   └── fa.json
 │   │   ├── public/
 │   │   │   ├── file.svg
 │   │   │   ├── globe.svg
@@ -62,6 +68,9 @@
 │   │   │   ├── globals.css
 │   │   │   ├── layout.tsx
 │   │   │   └── not-found.tsx
+│   │   ├── messages/
+│   │   │   ├── en.json
+│   │   │   └── fa.json
 │   │   ├── public/
 │   │   │   ├── file.svg
 │   │   │   ├── globe.svg
@@ -88,6 +97,9 @@
 │   │   │   ├── globals.css
 │   │   │   ├── layout.tsx
 │   │   │   └── not-found.tsx
+│   │   ├── messages/
+│   │   │   ├── en.json
+│   │   │   └── fa.json
 │   │   ├── public/
 │   │   │   ├── file.svg
 │   │   │   ├── globe.svg
@@ -157,28 +169,38 @@
 │   │   ├── package.json
 │   │   └── tsconfig.json
 │   └── ui/
+│       ├── fonts/
+│       │   └── irYekan.woff
 │       ├── src/
+│       │   ├── components/
+│       │   │   ├── breadcrumb.tsx
+│       │   │   ├── card.tsx
+│       │   │   ├── dateDisplay.tsx
+│       │   │   ├── fonts.ts
+│       │   │   ├── header.tsx
+│       │   │   ├── Icon.tsx
+│       │   │   ├── languageSwitcher.tsx
+│       │   │   ├── LocalizedNumbers.tsx
+│       │   │   ├── mainSidebar.tsx
+│       │   │   ├── not-found-page.tsx
+│       │   │   ├── NumericInput.tsx
+│       │   │   ├── searchBar.tsx
+│       │   │   └── welcome.tsx
+│       │   ├── containers/
+│       │   │   ├── form.tsx
+│       │   │   └── pageContainer.tsx
 │       │   ├── lib/
 │       │   │   ├── i18n-client.ts
 │       │   │   ├── nav-items.ts
 │       │   │   ├── numerals.ts
 │       │   │   └── sidebar-context.tsx
-│       │   ├── breadcrumb.tsx
-│       │   ├── card.tsx
-│       │   ├── dateDisplay.tsx
-│       │   ├── form.tsx
-│       │   ├── header.tsx
-│       │   ├── Icon.tsx
+│       │   ├── messages/
+│       │   │   ├── en.json
+│       │   │   └── fa.json
+│       │   ├── pages/
+│       │   │   └── landingPage.tsx
 │       │   ├── index.ts
-│       │   ├── languageSwitcher.tsx
-│       │   ├── LocalizedNumbers.tsx
-│       │   ├── mainSidebar.tsx
-│       │   ├── not-found-page.tsx
-│       │   ├── NumericInput.tsx
-│       │   ├── pageContainer.tsx
-│       │   ├── searchBar.tsx
-│       │   ├── temp.txt
-│       │   └── welcome.tsx
+│       │   └── temp.txt
 │       ├── package.json
 │       └── tsconfig.json
 ├── public/
@@ -204,7 +226,6 @@
 ├── npm-install-log.txt
 ├── package-lock.json
 ├── package.json
-├── pnpm-workspace.yaml
 ├── postcss.config.mjs
 ├── README.md
 ├── treeView.txt
