@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { ChevronDown, Globe } from "lucide-react";
-import { locales, type Locale } from "@/apps/web/i18n-config";
+import {
+  locales,
+  defaultLocale,
+  LOCALE_COOKIE_NAME,
+  type Locale,
+} from "@myorg/i18n-helpers";
 
-// اگه اسم/برچسب زبون خاصی نداشتی، از همین نگاشت استفاده می‌شه.
-// هر locale ای که توی i18n-config نبود، به‌صورت خودکار با حروف بزرگ نشون داده می‌شه.
 const localeLabels: Partial<Record<Locale, string>> = {
   fa: "فارسی",
   en: "English",
@@ -16,23 +19,28 @@ function getLabel(locale: Locale) {
   return localeLabels[locale] ?? locale.toUpperCase();
 }
 
-// مسیر فعلی رو می‌گیره و بخش locale اولش رو با locale جدید عوض می‌کنه
-function replaceLocaleInPath(pathname: string, nextLocale: Locale) {
-  const segments = pathname.split("/");
-  // segments[0] همیشه رشته‌ی خالیه (چون pathname با / شروع می‌شه)، segments[1] locale هست
-  if (segments.length > 1) {
-    segments[1] = nextLocale;
-  }
-  return segments.join("/") || `/${nextLocale}`;
+function readLocaleFromCookie(): Locale {
+  if (typeof document === "undefined") return defaultLocale;
+  const match = document.cookie.match(
+    new RegExp(`(?:^|; )${LOCALE_COOKIE_NAME}=([^;]+)`),
+  );
+  const value = match?.[1] as Locale | undefined;
+  return value && locales.includes(value) ? value : defaultLocale;
+}
+
+function writeLocaleToCookie(locale: Locale) {
+  document.cookie = `${LOCALE_COOKIE_NAME}=${locale}; path=/; max-age=31536000; SameSite=Lax`;
 }
 
 export default function LanguageSwitcher() {
-  const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const [currentLocale, setCurrentLocale] = useState<Locale>(defaultLocale);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const currentLocale = (pathname.split("/")[1] as Locale) ?? locales[0];
+  useEffect(() => {
+    setCurrentLocale(readLocaleFromCookie());
+  }, []);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -50,7 +58,9 @@ export default function LanguageSwitcher() {
   function handleSelect(locale: Locale) {
     setOpen(false);
     if (locale === currentLocale) return;
-    router.push(replaceLocaleInPath(pathname, locale));
+    writeLocaleToCookie(locale);
+    setCurrentLocale(locale);
+    router.refresh(); // نه push — فقط رفرش، چون URL نباید عوض بشه
   }
 
   return (
