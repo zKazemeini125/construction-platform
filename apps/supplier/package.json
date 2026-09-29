@@ -13,7 +13,8 @@
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "@myorg/ui": "*",
-    "@myorg/i18n-helpers": "*"
+    "@myorg/i18n-helpers": "*",
+    "@myorg/ui-kit": "*"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

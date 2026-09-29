@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["@myorg/ui", "@myorg/i18n-helpers"],
+  transpilePackages: ["@myorg/ui","@myorg/ui-kit", "@myorg/i18n-helpers"],
   experimental: {
     optimizePackageImports: ["@myorg/ui"],
   },

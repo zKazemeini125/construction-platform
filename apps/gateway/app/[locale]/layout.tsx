@@ -1,5 +1,5 @@
 import { getLocaleFromCookie } from "@myorg/i18n-helpers";
-import { irYekan } from "@myorg/ui";   // نام پکیجت را درست بگذار
+import { irYekan } from "@myorg/ui-kit";   // نام پکیجت را درست بگذار
 
 export default async function RootLayout({
   children,
