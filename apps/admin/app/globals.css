@@ -1,2 +1,5 @@
 @import "tailwindcss";
-@source "../../../packages/ui/src";
+@import "@myorg/ui-kit/tokens.css";
+
+/* Tailwind باید کلاس‌های استفاده‌شده در پکیج‌های مشترک رو هم اسکن کنه */
+@source "../../../packages/ui-kit/src";
