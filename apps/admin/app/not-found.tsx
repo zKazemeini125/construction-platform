@@ -1,4 +1,4 @@
-import { NotFoundPage } from "@myorg/ui";
+import { NotFoundPage } from "@myorg/ui-domain";
 import { getLocaleFromCookie } from "@myorg/i18n-helpers";
 
 export default async function NotFound() {

@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import fa from "@/messages/fa.json";
 import en from "@/messages/en.json";
-import { locales, defaultLocale, type Locale } from "@/apps/web/i18n-config";
+import { locales, defaultLocale, type Locale } from "@myorg/i18n-helpers";
 
 const dictionaries = { fa, en };
 

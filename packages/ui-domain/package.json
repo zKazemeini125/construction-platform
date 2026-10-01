@@ -11,6 +11,9 @@
     "react-dom": "19.2.8",
     "lucide-react": "^1.39.0"
   },
+  "dependencies": {
+    "@myorg/i18n-helpers": "*"
+  },
   "devDependencies": {
     "typescript": "^5",
     "lucide-react": "^1.39.0",
