@@ -8,5 +8,9 @@
   "exports": {
     ".": "./src/index.ts",
     "./*": "./src/*.ts"
+  },
+  "peerDependencies": {
+    "next": "*",
+    "react": "*"
   }
 }

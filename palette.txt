@@ -1,0 +1,210 @@
+DESIGN SYSTEM — COLOR PALETTE
+
+Use the following color system consistently across the entire UI.
+Do not introduce arbitrary colors unless absolutely necessary.
+Prefer semantic color variables over hardcoded HEX values.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BRAND COLORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Primary
+- HEX: #123B4A
+- Role: Main brand color
+- Meaning: Trust, engineering, technology
+- Usage:
+  - Main navigation
+  - Primary headings when appropriate
+  - Primary buttons
+  - Active states
+  - Important UI elements
+
+Primary Light
+- HEX: #2E6170
+- Role: Lighter variation of primary
+- Usage:
+  - Hover states
+  - Secondary brand elements
+  - Icons
+  - Supporting UI elements
+
+Accent
+- HEX: #D9822B
+- Role: Action / energy / construction accent
+- Usage:
+  - Important calls to action
+  - Highlights
+  - Selected states
+  - Attention-grabbing UI elements
+- Use sparingly so it remains visually meaningful.
+
+Accent Light
+- HEX: #F4B86A
+- Role: Soft accent variation
+- Usage:
+  - Accent backgrounds
+  - Subtle highlights
+  - Hover/selected backgrounds
+  - Decorative elements
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEMANTIC / STATUS COLORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Success
+- HEX: #238B6D
+- Meaning: Success, confirmation, completion
+- Usage:
+  - Success messages
+  - Completed states
+  - Successful operations
+  - Positive status badges
+
+Warning
+- HEX: #D99A2B
+- Meaning: Warning, needs review, pending
+- Usage:
+  - Warning messages
+  - Pending states
+  - Requires-attention states
+  - Warning badges
+
+Danger
+- HEX: #C94C4C
+- Meaning: Error, deletion, rejection
+- Usage:
+  - Errors
+  - Delete actions
+  - Rejected states
+  - Destructive actions
+
+Info
+- HEX: #3B82A0
+- Meaning: Information, processing
+- Usage:
+  - Informational messages
+  - Processing states
+  - Neutral notifications
+  - Informational badges
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BACKGROUND & SURFACE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background
+- HEX: #F6F8F9
+- Role: Main page background
+- Usage:
+  - Application/page background
+  - Large layout areas
+
+Surface
+- HEX: #FFFFFF
+- Role: Main content surface
+- Usage:
+  - Cards
+  - Modals
+  - Dialogs
+  - Main content containers
+  - Form surfaces
+
+Surface Secondary
+- HEX: #EEF2F3
+- Role: Secondary surface
+- Usage:
+  - Table headers
+  - Input backgrounds when appropriate
+  - Secondary sections
+  - Subtle UI containers
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BORDERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Border
+- HEX: #D9E1E4
+- Role: Default border color
+- Usage:
+  - Inputs
+  - Cards
+  - Tables
+  - Dividers
+  - Form controls
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TYPOGRAPHY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Text Primary
+- HEX: #17262D
+- Role: Main text
+- Usage:
+  - Headings
+  - Body text
+  - Important labels
+
+Text Secondary
+- HEX: #60717A
+- Role: Secondary text
+- Usage:
+  - Supporting descriptions
+  - Secondary labels
+  - Metadata
+
+Text Muted
+- HEX: #8B999F
+- Role: Low-emphasis text
+- Usage:
+  - Placeholders
+  - Captions
+  - Disabled/low-priority text
+  - Helper text
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DESIGN PRINCIPLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Keep the overall visual style professional, modern, technical,
+   trustworthy, and engineering-oriented.
+
+2. Primary (#123B4A) should be the dominant brand color.
+
+3. Accent (#D9822B) should be used selectively for actions and
+   visual emphasis, not as a general background color.
+
+4. Use semantic colors only according to their meaning:
+   - Success → #238B6D
+   - Warning → #D99A2B
+   - Danger → #C94C4C
+   - Info → #3B82A0
+
+5. Use #F6F8F9 as the default application background and
+   #FFFFFF for elevated/content surfaces.
+
+6. Maintain sufficient contrast between text and backgrounds.
+
+7. Avoid introducing new colors when an existing semantic color
+   can fulfill the same purpose.
+
+8. Prefer CSS variables/design tokens instead of hardcoded HEX values.
+
+9. The UI should feel clean and structured rather than overly colorful.
+
+10. The color system should work consistently across:
+    - Dashboard
+    - Forms
+    - Tables
+    - Cards
+    - Modals
+    - Navigation
+    - Buttons
+    - Alerts
+    - Badges
+    - Empty states
+    - Loading states
+    - Error states
