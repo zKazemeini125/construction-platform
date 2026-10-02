@@ -33,7 +33,10 @@
 │   ├── gateway/
 │   │   ├── app/
 │   │   │   ├── [locale]/
+│   │   │   │   ├── login/
+│   │   │   │   │   └── page.tsx
 │   │   │   │   ├── layout.tsx
+│   │   │   │   ├── LoginPage.tsx
 │   │   │   │   ├── not-found.tsx
 │   │   │   │   └── page.tsx
 │   │   │   ├── globals.css
@@ -53,10 +56,10 @@
 │   │   ├── CLAUDE.md
 │   │   ├── eslint.config.mjs
 │   │   ├── i18n-config.ts
-│   │   ├── middleware.ts
 │   │   ├── next.config.ts
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
+│   │   ├── proxy.ts
 │   │   ├── README.md
 │   │   └── tsconfig.json
 │   ├── portal/
@@ -126,30 +129,19 @@
 │   │   │   └── merge-dictionary.ts
 │   │   ├── package.json
 │   │   └── tsconfig.json
-│   ├── ui/
+│   ├── ui-domain/
 │   │   ├── src/
 │   │   │   ├── components/
-│   │   │   │   ├── breadcrumb.tsx
-│   │   │   │   ├── card.tsx
-│   │   │   │   ├── dateDisplay.tsx
 │   │   │   │   ├── header.tsx
-│   │   │   │   ├── Icon.tsx
 │   │   │   │   ├── languageSwitcher.tsx
-│   │   │   │   ├── LocalizedNumbers.tsx
 │   │   │   │   ├── mainSidebar.tsx
 │   │   │   │   ├── not-found-page.tsx
-│   │   │   │   ├── NumericInput.tsx
-│   │   │   │   ├── searchBar.tsx
 │   │   │   │   └── welcome.tsx
-│   │   │   ├── containers/
-│   │   │   │   ├── form.tsx
-│   │   │   │   └── pageContainer.tsx
 │   │   │   ├── icons/
 │   │   │   │   └── page.tsx
 │   │   │   ├── lib/
 │   │   │   │   ├── i18n-client.ts
 │   │   │   │   ├── nav-items.ts
-│   │   │   │   ├── numerals.ts
 │   │   │   │   └── sidebar-context.tsx
 │   │   │   ├── messages/
 │   │   │   │   ├── en.json
@@ -182,18 +174,28 @@
 │   │   │   │   ├── landingPage.tsx
 │   │   │   │   ├── layoutabc.tsx
 │   │   │   │   └── pageabc.tsx
-│   │   │   ├── web/
-│   │   │   │   └── app/
-│   │   │   │       ├── favicon.ico
-│   │   │   │       └── globals.css
-│   │   │   ├── index.ts
-│   │   │   └── temp.txt
+│   │   │   └── index.ts
 │   │   ├── package.json
 │   │   └── tsconfig.json
 │   └── ui-kit/
 │       ├── fonts/
 │       │   └── irYekan.woff
 │       ├── src/
+│       │   ├── components/
+│       │   │   ├── breadcrumb.tsx
+│       │   │   ├── card.tsx
+│       │   │   ├── dateDisplay.tsx
+│       │   │   ├── Icon.tsx
+│       │   │   ├── LocalizedNumbers.tsx
+│       │   │   ├── NumericInput.tsx
+│       │   │   └── searchBar.tsx
+│       │   ├── containers/
+│       │   │   ├── form.tsx
+│       │   │   └── pageContainer.tsx
+│       │   ├── lib/
+│       │   │   └── numerals.ts
+│       │   ├── styles/
+│       │   │   └── tokens.css
 │       │   ├── fonts.ts
 │       │   └── index.ts
 │       ├── package.json
@@ -221,6 +223,7 @@
 ├── npm-install-log.txt
 ├── package-lock.json
 ├── package.json
+├── palette.txt
 ├── postcss.config.mjs
 ├── README.md
 ├── treeView.txt
