@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: sakhtplat-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sakhtplat
+      POSTGRES_PASSWORD: sakhtplat_dev_pw
+      POSTGRES_DB: sakhtplat
+    ports:
+      - "5432:5432"
+    volumes:
+      - sakhtplat_pgdata:/var/lib/postgresql/data
+
+volumes:
+  sakhtplat_pgdata:
